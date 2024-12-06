@@ -1,0 +1,86 @@
+/* General Reset */
+body, h1, div, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons Styling */
+#choices button {
+    background: #fff;
+    color: #333;
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#choices button:hover {
+    transform: scale(1.1);
+    background: #f1c40f;
+    color: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display Areas */
+#playerDisplay, #computerDisplay, #resultDisplay {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Score Display */
+.scoreDisplay {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #choices button {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    #playerDisplay, #computerDisplay, #resultDisplay, .scoreDisplay {
+        font-size: 1rem;
+    }
+}
